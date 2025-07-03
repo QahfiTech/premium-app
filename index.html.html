@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PremiumApp - Aplikasi Premium Terpercaya</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .hero-section {
+        background: linear-gradient(135deg, #8e2de2, #4a00e0);
+        color: white;
+        padding: 80px 0;
+      }
+      .app-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 20px;
+      }
+      .app-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .pricing {
+        font-weight: bold;
+        color: #4a00e0;
+      }
+      .badge-premium {
+        background-color: #4a00e0;
+        color: white;
+      }
+      footer {
+        background-color: #212529;
+        color: white;
+        padding: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">PremiumApp Kelompok 3</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apps">Aplikasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fas fa-envelope me-1"></i> premiumapp@gmail.com</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                ><i class="fab fa-whatsapp me-1"></i> WhatsApp</a
+              >
+            </li>
+            
+            
+              
+            </li>
+           
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">Aplikasi Premium Terpercaya</h1>
+        <p class="lead mb-4">
+          Nikmati akses ke Netflix, Spotify Premium, Viu, dan layanan streaming
+          premium lainnya dengan harga terjangkau!
+        </p>
+        
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Mengapa harus Memilih Kami?</h2>
+          <p class="text-muted">Layanan premium dengan harga terjangkau</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="fas fa-shield-alt text-primary fa-3x"></i>
+                </div>
+                <h5 class="card-title">100% Aman & Legal</h5>
+                <p class="card-text text-muted">
+                  Akun premium yang kami sediakan dijamin aman dan terjaga
+                  privasinya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="fas fa-headset text-primary fa-3x"></i>
+                </div>
+                <h5 class="card-title">Layanan 24/7</h5>
+                <p class="card-text text-muted">
+                  Tim kami siap membantu Anda kapan saja melalui WhatsApp atau
+                  email.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="fas fa-wallet text-primary fa-3x"></i>
+                </div>
+                <h5 class="card-title">Harga Terjangkau</h5>
+                <p class="card-text text-muted">
+                  Dapatkan akses premium dengan harga jauh lebih murah dari
+                  harga resmi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Aplikasi Premium</h2>
+          <p class="text-muted">Pilih layanan premium favorit Anda</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card app-card h-100">
+              <img
+                src="1723819567netflix-logo-transparent-png.png"
+                alt="Netflix"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">Netflix Premium per profile</h5>
+                  <span class="badge badge-premium">HOT</span>
+                </div>
+                <p class="card-text">
+                  Akses tak terbatas ke ribuan film dan acara TV populer.
+                  Streaming di HD dan Ultra HD.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Akun pribadi
+                  </li>
+
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Garansi 30
+                    hari
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div class="pricing">Rp 30.000 / bulan</div>
+                  <button class="btn btn-primary" onclick="window.open('https://wa.me/6281234567894', '_blank')">
+                  Beli Sekarang
+            </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Netflix -->
+          <div class="col-md-4">
+            <div class="card app-card h-100">
+              <img
+                src="1723819567netflix-logo-transparent-png.png"
+                alt="Netflix"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">Netflix Premium</h5>
+                  <span class="badge badge-premium">HOT</span>
+                </div>
+                <p class="card-text">
+                  Akses tak terbatas ke ribuan film dan acara TV populer.
+                  Streaming di HD dan Ultra HD.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Akun pribadi
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>4 Profil
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Garansi 30
+                    hari
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Sharing 1
+                    profile 30k
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div class="pricing">Rp 55.000 / bulan</div>
+                  <button class="btn btn-primary" onclick="window.open('https://wa.me/6281234567894', '_blank')">
+                  Beli Sekarang
+            </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spotify -->
+          <div class="col-md-4">
+            <div class="card app-card h-100">
+              <img
+                src="spotify-logo-2500x749.png"
+                alt="Spotify"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">Spotify Premium</h5>
+                  <span class="badge badge-premium">BEST</span>
+                </div>
+                <p class="card-text">
+                  Dengarkan musik bebas iklan, download, dan nikmati kualitas
+                  audio yang lebih baik.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Akun pribadi
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Tanpa iklan
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Garansi 30
+                    hari
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div class="pricing">Rp 25.000 / bulan</div>
+                  <button class="btn btn-primary" onclick="window.open('https://wa.me/6281234567894', '_blank')">
+                  Beli Sekarang
+            </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <!-- youtube -->
+          <div class="col-md-4">
+            <div class="card app-card h-100">
+              <img
+                src="logo-youtube-png.jpg"
+                alt="Spotify"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">youtube Premium</h5>
+                  <span class="badge badge-premium">BEST</span>
+                </div>
+                <p class="card-text">
+                  Tonton video bebas iklan, download, dan nikmati kualitas
+                  gambar yang lebih baik.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Akun pribadi
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Tanpa iklan
+                  </li>
+                   <i class="fas fa-check text-success me-2"></i>Download offline
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Garansi 30
+                    hari
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div class="pricing">Rp 15.000 / bulan</div>
+                  <button class="btn btn-primary" onclick="window.open('https://wa.me/6281234567894', '_blank')">
+                  Beli Sekarang
+            </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Viu -->
+          <div class="col-md-4">
+            <div class="card app-card h-100">
+              <img
+                src="viu2.jpg"
+                alt="Viu"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0">Viu Premium</h5>
+                  <span class="badge badge-premium">NEW</span>
+                </div>
+                <p class="card-text">
+                  Tonton drama Korea, variety show, dan konten Asia lainnya
+                  tanpa iklan.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Akun pribadi
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Download
+                    offline
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Garansi 30
+                    hari
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div class="pricing">Rp 30.000 / bulan</div>
+                 <button class="btn btn-primary"
+  onclick="window.open('https://wa.me/6281234567894?text=Halo%2C%20saya%20ingin%20beli%20produk%20VIU', '_blank')">
+  Beli Sekarang
+</button>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Apa Kata Pelanggan Kami</h2>
+          <p class="text-muted">Testimoni dari pelanggan setia</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "Sudah langganan Netflix selama 6 bulan, belum pernah ada
+                  masalah. Customer service-nya juga responsive banget!"
+                </p>
+                <div class="d-flex mt-3">
+                  
+                 
+                  <div>
+                    <h6 class="mb-0">Budi Santoso</h6>
+                    <small class="text-muted">Jakarta</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "Spotify Premium-nya lancar jaya, bisa download musik
+                  sepuasnya. Harganya juga jauh lebih murah dari yang resmi."
+                </p>
+                <div class="d-flex mt-3">
+                  
+                  <div>
+                    <h6 class="mb-0">Dewi Lestari</h6>
+                    <small class="text-muted">Bandung</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star-half-alt text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "Awalnya ragu, tapi setelah dicoba ternyata akun Viu-nya
+                  beneran works! Bisa nonton drama Korea favorit tanpa
+                  buffering."
+                </p>
+                <div class="d-flex mt-3">
+                  
+                  <div>
+                    <h6 class="mb-0">Ani Wijaya</h6>
+                    <small class="text-muted">Surabaya</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+
+    
+    <title>Accordion FAQ Section</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+       
+        
+
+        .accordion-item {
+            background-color: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .accordion-item:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .accordion-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        .accordion-header.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .accordion-header h3 {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .accordion-header .icon {
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .accordion-header.active .icon {
+            transform: rotate(45deg);
+            color: var(--white);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f9f9f9;
+        }
+
+        .accordion-content-inner {
+            padding: 0 20px;
+        }
+
+        .accordion-content p {
+            padding: 20px 0;
+            color: #555;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 30px auto;
+            }
+            
+            .faq-header h1 {
+                font-size: 2rem;
+            }
+            
+            .accordion-header h3 {
+                font-size: 1rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="faq-header">
+            <h1>Pertanyaan Umum</h1>
+            <p>Jawaban atas pertanyaan yang sering diajukan</p>
+        </div>
+
+        <div class="accordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Apa saya metode pembayarannya?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>kita melayani pembayaran BANK,OVO,DANA,SUPERBANK,GOPAY,SPAY.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Apakah Ini Aman Dan Legal?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Ya, semua akun premium yang kami sediakan 100% aman dan legal. Kami menjamin privasi dan keamanan akun Anda..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Berapa Lama proses nya??</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Langsung di proses admin jika pemesanan jam 7 Pagi sampai jam 10 Malem, diatas itu di proses besok harinya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Apa yang terjadi jika akun bermasalah?</h3>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Hubungi kami, dan kami akan mengganti akunnya 100% gratis tanpa biaya tambahan.</p>
+                    </div>
+                </div>
+            </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    // Toggle active class on header
+                    this.classList.toggle('active');
+                    
+                    // Get the associated content
+                    const content = this.nextElementSibling;
+                    
+                    // Toggle the content visibility
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                    
+                    // Close other open items
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                            otherHeader.classList.remove('active');
+                            const otherContent = otherHeader.nextElementSibling;
+                            otherContent.style.maxHeight = null;
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+```
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+            <p class="text-muted mb-5">
+              Ada pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi
+              kami!
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="fas fa-envelope text-primary fa-3x"></i>
+                </div>
+                <h5 class="card-title">Email</h5>
+                <p class="card-text">premiumapp@gmail.com</p>
+                <button class="btn btn-outline-primary"
+  onclick="window.location.href='mailto:premiumapp@gmail.com'">
+  Kirim Email
+</button>
+              </div>
+            </div>
+                        
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
